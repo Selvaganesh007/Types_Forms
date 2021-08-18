@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Doctor Appointment Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 17px;
+            padding: 8px;
+        }
+
+        input[type=date],
+        input[type=time],
+        input[type=text],
+        input[type=email],
+        input[type=month] {
+            color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        input[type=number] {
+            color: rgb(0, 0, 0);
+            width: 50%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 20px;
+            padding: 20px 30px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .box {
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        tr,
+        td {
+            margin: 30px;
+            color: red;
+        }
+
+        select {
+            color: rgb(0, 0, 0);
+            width: 50%;
+            font-size: small;
+            padding: 15px 22px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        textarea {
+            color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 15px 22px;
+            margin-left: 70px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Patients Personal Details</h1>
+        <p>Fill the form below and we will get back soon to you for more updates.</p>
+        <hr>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <table width=100% align="center">
+                <tr>
+                    <td width="40%">
+                        Full Name :*
+                    </td>
+                    <td width="60%">
+                        <input type="text" name="uname" placeholder="Enter your name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender :*
+                    </td>
+                    <td>
+                        <select name="gender">
+                            <option value="select">select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age :*
+                    </td>
+                    <td>
+                        <input type="number" name="age" placeholder="Age">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone number :*
+                    </td>
+                    <td>
+                        <input type="number" name="num" placeholder="Enter Phone number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth :*
+                    </td>
+                    <td>
+                        <input type="date" name="dob" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address :*
+                    </td>
+                    <td>
+                        <input type="text" name="address" placeholder="address line 1" required><br>
+                        <input type="text" name="address1" placeholder="address line 2" required><br>
+                        <input type="text" name="address3" placeholder="address line 3"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email address :
+                    </td>
+                    <td>
+                        <input type="Email" name="email" placeholder="Enter email id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Have you previously attended our facility* <br><br>
+                        <input type="radio" name="ra" value="yes" required>yes
+                        <input type="radio" name="ra" value="no" required>No <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        If Yes, state on which condition and when?*
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="condi" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Appointment :
+                    </td>
+                    <td>
+                        <input type="date" name="dob" required>
+                        <input type="time" name="time" required>
+                    </td>
+                </tr>
+            </table>
+            <div class="btn">
+                <button type="submit" class="submit">Payment</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Collection Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom right, #ff0202, rgb(252, 255, 51));
+        }
+
+        h1 {
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .forms {
+            align-content: center;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        select {
+            color: rgb(0, 0, 0);
+            width: 50%;
+            font-size: large;
+            padding: 15px 22px;
+            margin: 8px 80px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=date],
+        input[type=radio],
+        input[type=number],
+        input[type=file] {
+            width: 100%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        textarea {
+            color: rgb(0, 0, 0);
+            width: 80%;
+            padding: 15px 22px;
+            margin-left: 70px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            font-size: large;
+            border-radius: 8px;
+            border-radius: 8px;
+        }
+
+        .submit {
+            width: auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .box {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Submit a Resume</h1>
+        <hr>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <table width=100% align="center">
+                <label for="name">Full Name</label>
+                <tr>
+                    <td width=50%>
+                        <input type="text" name="1stdname" placeholder="first name " required>
+                    </td>
+                    <td width=50%>
+                        <input type="text" name="2stdname" placeholder="second name " required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="gender">
+                            <option value="select">select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="cor">Skill level :</label>
+                        <select name="course" id="course">
+                            <option value="select">select</option>
+                            <option value="volvo">Inexperience</option>
+                            <option value="saab">Experience</option>
+                            <option value="fiat">Student</option>
+                            <option value="audi">Intermediate</option>>
+                        </select><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone number :*<input type="number" name="num" placeholder="Enter Phone number">
+                    </td>
+                    <td>
+                        Email Id :<input type="Email" name="email" placeholder="Enter email id">
+                    </td>
+                </tr>
+            </table>
+            Address :
+            <input type="text" name="address" placeholder="address line 1" required><br>
+            <input type="text" name="address1" placeholder="address line 2" required><br>
+            <input type="text" name="address3" placeholder="address line 3"><br>
+            <table width=100% align="center">
+                <tr>
+                    <td>
+                        State :<input type="text" name="state" placeholder="Enter your State">
+                    </td>
+                    <td>
+                        Country :<input type="text" name="con" placeholder="Enter your Country">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="resume">Resume :</label>
+                        <input type="file" name="resume" accept="pdf" required>
+                    </td>
+                </tr>
+            </table>
+            <h2>Cover letter :</h2>
+            <textarea name="condi" cols="50" rows="10"></textarea> <br>
+            <div class="btn">
+                <button type="submit" class="submit">Submit </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

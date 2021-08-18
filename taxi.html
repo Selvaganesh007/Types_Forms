@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Taxi Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom right, #ff0202, rgb(252, 255, 51));
+        }
+
+        h1 {
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .forms {
+            align-content: center;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        select {
+            color: rgb(0, 0, 0);
+            width: 50%;
+            font-size: large;
+            padding: 15px 22px;
+            margin: 8px 80px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=date],
+        input[type=radio],
+        input[type=number] {
+            width: 100%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            font-size: large;
+            border-radius: 8px;
+            border-radius: 8px;
+        }
+
+        .submit {
+            width: auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .box {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Online Taxi Booking Form</h1>
+        <p>Please fill in the form correctly to book a taxi online.</p>
+        <hr>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <table width=100% align="center">
+                <label for="name">Full Name</label>
+                <tr>
+                    <td width=50%>
+                        <input type="text" name="1stdname" placeholder="first name " required>
+                    </td>
+                    <td width=50%>
+                        <input type="text" name="2stdname" placeholder="second name " required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        From :
+                    </th>
+                    <th>
+                        To :
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="from" placeholder="Enter the starting place" required>
+                    </td>
+                    <td>
+                        <input type="text" name="to" placeholder="Enter the Ending place" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Have you previously attended our facility* <br>
+                        <input type="radio" name="ra" value="yes" required>yes
+                        <input type="radio" name="ra" value="no" required>No <br><br>
+                    </td>
+                </tr>
+            </table>
+            Phone number :*<input type="number" name="num" placeholder="Enter Phone number">
+            Email Id :<input type="Email" name="email" placeholder="Enter email id">
+            Address :
+            <input type="text" name="address" placeholder="address line 1" required><br>
+            <input type="text" name="address1" placeholder="address line 2" required><br>
+            <input type="text" name="address3" placeholder="address line 3"><br>
+            <label for="pincode">Pincode</label>
+            <input type="number" name="pincode" placeholder="pincode">
+            <label for="country">Country</label>
+            <input type="text" name="country" placeholder="country">
+            <div class="btn">
+                <button type="submit" class="submit">Book a Taxi</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

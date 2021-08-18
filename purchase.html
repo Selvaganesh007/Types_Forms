@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase order form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom right, #ffffff, rgb(70, 180, 165));
+        }
+
+        h1 {
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .pro {
+            color: blue;
+            padding: 20px;
+        }
+
+        tr,
+        th {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        input[type=date],
+        input[type=time],
+        input[type=text],
+        input[type=email] {
+            color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 20px;
+            padding: 20px 30px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .btn {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Purchase Order
+    </h1>
+    <div class="pro">
+        <h2>My cart:</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <table border="2" width=100% align="center">
+                <tr>
+                    <th width=60%>
+                        Product
+                    </th>
+                    <th width=40%>
+                        Amount
+                    </th>
+                </tr>
+                <tr>
+                    <td width=60% align="center">
+                        <img src="https://rukminim1.flixcart.com/image/416/416/kn7sdjk0/mobile/n/6/z/c20-rmx3063-realme-original-imagfxfzgfznmwzh.jpeg?q=70"
+                            alt="pro1" width=30%>
+                    </td>
+                    <td align="center">
+                        ₹12,000
+                    </td>
+                <tr>
+                    <td width=60% align="center">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/kq6yefk0/television/s/c/z/l43m4-4ain-mi-original-imag496eqghnqhpu.jpeg?q=70"
+                            alt="pro2" width=30%>
+                    </td>
+                    <td align="center">
+                        ₹25,500
+                    </td>
+                </tr>
+                <tr>
+                    <td width=60% align="center">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/jpwxxu80/sofa-sectional/q/3/u/brown-jute-sbanwjd-12545458-balaji-honey-original-imafcfgut6ajkdj8.jpeg?q=70"
+                            alt="pro3" width=30%>
+                    </td>
+                    <td align="center">
+                        ₹21,100
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        Total :
+                    </td>
+                    <td align="center">
+                        ₹58,600
+                    </td>
+                </tr>
+            </table>
+            <form action="#" method="POST">
+                <p>Name</p>
+                <input type="text" name="uname1" placeholder="Enter Your Name" required="">
+
+                <p>Email</p>
+                <input type="Email" name="email" placeholder="Enter Email id" required="">
+
+                <p>Mobile number</p>
+                <input type="text" name="mbno" placeholder="Enter mobilee number" required>
+
+                <p>Shipping address</p>
+                <input type="text" name="address" placeholder="address line 1" required><br>
+                <input type="text" name="address1" placeholder="address line 2" required><br>
+                <input type="text" name="address3" placeholder="address line 3"><br>
+                <p>State</p>
+                <input type="text" name="state" placeholder="State" required>
+                <p>Country</p>
+                <input type="text" name="Country" placeholder="Country" required>
+                <div class="btn">
+                    <button type="submit" class="submit">Payment</button>
+                </div>
+            </form>
+    </div>
+
+</body>
+
+</html>

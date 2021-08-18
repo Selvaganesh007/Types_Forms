@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 17px;
+            padding: 8px;
+        }
+
+        input[type=date],
+        input[type=time],
+        input[type=text],
+        input[type=email],
+        input[type=number],
+        input[type=month] {
+            color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 20px;
+            padding: 20px 30px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .box {
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        tr,
+        td {
+            margin: 30px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Payment form</h1>
+        <p>Credit card details</p>
+        <hr>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <table width=100% align="center">
+                <tr>
+                    <th>
+                        First Name
+                    </th>
+                    <th>
+                        Last Name
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="uname" placeholder="First name">
+                    </td>
+                    <td>
+                        <input type="text" name="uname" placeholder="last name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Credit Card Number
+                    </th>
+                    <th>
+                        Security code
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name="acno" placeholder=".... .... .... ....">
+                    </td>
+                    <td>
+                        <input type="text" name="secno" placeholder="CVC">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Card Expiration
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="month" name="secno" placeholder="CVC">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Phone number
+                    </th>
+                    <th width=50%>
+                        Email
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="mbno" placeholder="Enter mobilee number" required>
+                    </td>
+                    <td>
+                        <input type="Email" name="email" placeholder="Enter email id" required>
+                    </td>
+                </tr>
+            </table>
+            <div class="btn">
+                <button type="submit" class="submit">Payment</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

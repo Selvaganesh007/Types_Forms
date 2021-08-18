@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Report Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 17px;
+            padding: 8px;
+        }
+
+        input[type=date],
+        input[type=time],
+        input[type=text],
+        input[type=email],
+        input[type=month] {
+            color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        input[type=number] {
+            color: rgb(0, 0, 0);
+            width: 50%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 20px;
+            padding: 20px 30px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .box {
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        tr,
+        td {
+            margin: 30px;
+            color: red;
+        }
+
+        select {
+            color: rgb(0, 0, 0);
+            width: 50%;
+            font-size: small;
+            padding: 15px 22px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        textarea {
+            color: rgb(0, 0, 0);
+            width: 80%;
+            padding: 15px 22px;
+            margin-left: 70px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <h1>Abstract Submission Form</h1>
+            <hr>
+            <table width=100% align="center">
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        Prifix *
+                        <input type="radio" name="ra" value="dr" required>Dr.
+                        <input type="radio" name="ra" value="prof" required>Prof.
+                        <input type="radio" name="ra" value="mr" required>Mr.
+                        <input type="radio" name="ra" value="md" required>Ms.
+                    </td>
+                </tr>
+                <tr>
+                    <td width="40%">
+                        Full Name : *
+                    </td>
+                    <td width="60%">
+                        <input type="text" name="uname" placeholder="Enter name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender : *
+                    </td>
+                    <td>
+                        <select name="gender">
+                            <option value="select">select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Department *
+                    </td>
+                    <td>
+                        <input type="text" name="depart" placeholder="Enter your department" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Institution / Organization *
+                    </td>
+                    <td>
+                        <input type="text" name="ins" placeholder="Enter your Institutaion" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone number : *
+                    </td>
+                    <td>
+                        <input type="number" name="num" placeholder="Enter Phone number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address :*
+                    </td>
+                    <td>
+                        <input type="text" name="address" placeholder="address line 1" required><br>
+                        <input type="text" name="address1" placeholder="address line 2" required><br>
+                        <input type="text" name="address3" placeholder="address line 3"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email address :
+                    </td>
+                    <td>
+                        <input type="Email" name="email" placeholder="Enter email id"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Presentation Type *
+                    </td>
+                    <td>
+                        <input type="radio" name="ra" value="poster" required>Poster
+                        <input type="radio" name="ra" value="oral" required>Oral
+                        <input type="radio" name="ra" value="no" required>No preperence <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Equipment Needed *
+                    </td>
+                    <td>
+                        <input type="radio" name="ra" value="Spro" required>Single projector
+                        <input type="radio" name="ra" value="Dpro" required>Double projector
+                        <input type="radio" name="ra" value="com" required>Computer
+                        <input type="radio" name="ra" value="LCD" required>LCD <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Abstract Title* *
+                    </td>
+                    <td>
+                        <input type="text" name="abt" placeholder="Enter your title" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Speaker* *
+                    </td>
+                    <td>
+                        <input type="text" name="speker" placeholder="Enter speaker name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Author* *
+                    </td>
+                    <td>
+                        <input type="text" name="Author" placeholder="Enter Author name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Objectives *
+                    </td>
+                    <td>
+                        <textarea name="condi" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Study Design *
+                    </td>
+
+                    <td>
+                        <textarea name="condi" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Significance *
+                    </td>
+
+                    <td>
+                        <textarea name="condi" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Study Population *
+                    </td>
+
+                    <td>
+                        <textarea name="condi" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Methodology *
+                    </td>
+
+                    <td>
+                        <textarea name="condi" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Results : *
+                    </td>
+                    <td>
+                        <textarea name="condi" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Conclusion *
+                    </td>
+                    <td>
+                        <textarea name="condi" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <div class="btn">
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

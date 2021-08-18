@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Membership Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom right, #02a2ff, #00e1ff);
+        }
+
+        h1 {
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .forms {
+            align-content: center;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        select {
+            color: rgb(0, 0, 0);
+            width: 50%;
+            font-size: large;
+            padding: 15px 22px;
+            margin: 8px 80px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=date],
+        input[type=radio],
+        input[type=number] {
+            width: 100%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            font-size: large;
+            border-radius: 8px;
+            border-radius: 8px;
+        }
+
+        .submit {
+            width: auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .box {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        h2 {
+            margin-left: 20px;
+        }
+
+        .foot {
+            margin-left: 30px;
+            text-align: center;
+            font-size: large;
+        }
+
+        .last {
+            color: red;
+        }
+
+        .ch {
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Club Membership Registration</h1>
+        <p>Complete the form below to sign up for our membership service.</p>
+        <hr>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <table width=100%>
+                <label for="name">Name</label>
+                <tr>
+                    <td width=50%>
+                        <input type="text" name="1stdname" placeholder="first name " required>
+                    </td>
+                    <td width=50%>
+                        <input type="text" name="2stdname" placeholder="second name " required>
+                    </td>
+                </tr>
+                <tr>
+                    <td width=50%>
+                        <label for="dob">Birth Date</label>
+                        <input type="date" name="dob" required>
+                    </td>
+                    <td>
+                        <select name="gender">
+                            <option value="select">select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div class="ch">
+                <p style="text-align: left;">Where did you hear about us?</p><br>
+                <input type="checkbox">A friend or colleagus <br>
+                <input type="checkbox">Google<br>
+                <input type="checkbox">Blog post<br>
+                <input type="checkbox">News Article<br><br>
+            </div>
+            <label for="address">Address</label>
+            <input type="text" name="address" placeholder="address line 1">
+            <input type="text" name="address1" placeholder="address line 2">
+            <input type="text" name="address3" placeholder="address line 3">
+            <table width=100%>
+                <tr>
+                    <td width=50px>
+                        <label for="city">City</label>
+                        <input type="text" name="city" placeholder="City">
+                    </td>
+                    <td width=50px>
+                        <label for="state">State</label>
+                        <input type="text" name="state" placeholder="State">
+                    </td>
+                </tr>
+            </table>
+            <table width=100%>
+                <tr>
+                    <td width=50%>
+                        <label for="pincode">Pincode</label>
+                        <input type="number" name="pincode" placeholder="pincode">
+                    </td>
+                    <td width=50%>
+                        <label for="country">Country</label>
+                        <input type="text" name="country" placeholder="country">
+                    </td>
+                </tr>
+            </table>
+            <table width=100%>
+                <tr>
+                    <td width=50%>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Enter email">
+                    </td>
+                    <td width=50%>
+                        <label for="number">Mobile number</lab>
+                            <input type="text" name="number" placeholder="enter phone number">
+                    </td>
+                </tr>
+            </table>
+            <div class="foot">
+                <h2>Membership Rules</h2>
+                <hr>
+                <p style="color: hsl(133, 100%, 14%);">
+                    1. Membership is available to anyone 18 years of age or older. <br><br>
+
+                    2. You promise NOT to use to conduct any fraudulent or business activity or have more than one
+                    Member
+                    Account at any time.
+                </p>
+                <input type="checkbox" required> I have read, understood, and accepted the ruels for membership
+                <hr>
+                <h2>Privacy Policy</h2>
+                <hr>
+                <p>
+                    Please reach out and read our Privacy Policy in order to understand how your information is used and
+                    shared, and check below if you accept the policy. <br><br>
+                    <input type="checkbox" required> I have read, understood, and accepted the Privacy Policy for
+                    membership <br><br>
+                <div class="last">
+                    Once you submit your application, we will contact you shortly to complete your membership
+                    application.
+                    <br>
+
+                    Thank you! <br>
+                </div>
+                </p>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

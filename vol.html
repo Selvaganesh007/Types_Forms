@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Application Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom right, #ff9b7c, rgb(95, 95, 0));
+
+        }
+
+        .ch {
+            text-align: center;
+        }
+
+        h1 {
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .forms {
+            align-content: center;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        select {
+            color: rgb(0, 0, 0);
+            width: 50%;
+            font-size: large;
+            padding: 15px 22px;
+            margin: 8px 80px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        textarea {
+            color: rgb(0, 0, 0);
+            width: 80%;
+            padding: 15px 22px;
+            margin-left: 70px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #d3e6df;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=date],
+        input[type=radio],
+        input[type=number] {
+            width: 100%;
+            padding: 15px 22px;
+            margin: 8px 0;
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        input[type=checkbox] {
+            padding: 15px 22px;
+            margin: 8px 0;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            font-size: large;
+            border-radius: 8px;
+            border-radius: 8px;
+        }
+
+        .submit {
+            width: auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .box {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Volunteer Application Form</h1>
+        <hr>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <table width=100% align="center">
+                <label for="name">Full Name</label>
+                <tr>
+                    <td width=50%>
+                        <input type="text" name="1stdname" placeholder="first name " required>
+                    </td>
+                    <td width=50%>
+                        <input type="text" name="2stdname" placeholder="second name " required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone number :*<input type="number" name="num" placeholder="Enter Phone number">
+                    </td>
+                    <td>
+                        Email Id :<input type="Email" name="email" placeholder="Enter email id">
+                    </td>
+                </tr>
+            </table>
+            <div class="ch">
+                <h2>Days of work</h2><br>
+                <input type="checkbox" name="sun" value="sun">Sunday<br>
+                <input type="checkbox" name="sun" value="sun">Monday<br>
+                <input type="checkbox" name="sun" value="sun">Tuesday<br>
+                <input type="checkbox" name="sun" value="sun">Wednesday<br>
+                <input type="checkbox" name="sun" value="sun">Thursday<br>
+                <input type="checkbox" name="sun" value="sun">Friday<br>
+                <input type="checkbox" name="sun" value="sun">Saturday<br>
+            </div>
+            <h2>Skillsets or Area of Interests :</h2>
+            <textarea name="condi" cols="30" rows="10"></textarea> <br>
+            <div class="ch">
+                <h2>Skills</h2><br>
+                <input type="checkbox" name="fa" value="First Aid">First Aid<br>
+                <input type="checkbox" name="teach" value="Teaching">Teaching<br>
+                <input type="checkbox" name="finace" value="Financial Aid">Financial Aid<br>
+                <input type="checkbox" name="it" value="IT">IT<br>
+                <input type="checkbox" name="child" value="Childcare">Child Care<br>
+                <input type="checkbox" name="spneed" value="Special">Special Needs<br>
+                <input type="checkbox" name="law" value="law">Law and Human Rights<br>
+            </div>
+            <label for="ph">Phone number :</label>
+            <input type="number" name="no" placeholder="Enter your Mobile no" required>
+            <label for="address">Address :</label>
+            <input type="text" name="address" placeholder="address line 1" required><br>
+            <input type="text" name="address1" placeholder="address line 2" required><br>
+            <input type="text" name="address3" placeholder="address line 3"><br>
+            <table width=100% align="center">
+                <tr>
+                    <td>
+                        Pincode :<input type="number" name="pincode" placeholder="Enter pincode">
+                    </td>
+                    <td>
+                        State :<input type="text" name="state" placeholder="Enter your State">
+                    </td>
+                </tr>
+            </table>
+            <h2>Commends :</h2>
+            <textarea name="condi" cols="30" rows="10"></textarea> <br>
+            <div class="btn">
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
